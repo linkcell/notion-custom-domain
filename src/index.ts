@@ -33,7 +33,8 @@ const ga = GA_TRACKING_ID
 </script>`
   : '';
 
-const pageview = `<script>
+const pageview = `<style> .notion-topbar > div > .notion-focusable{ display:none !important; } </style>
+<script>
   window.pagePath = location.pathname + location.search + location.hash;
   function pageview(){
     var pagePath = location.pathname + location.search + location.hash;
