@@ -39,6 +39,12 @@ const pageview = `
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
   } 
+  h1 {
+    visibility: hidden;
+  }
+  h1:after{
+    content: 'Submit new paper';
+  }
 </style>
 <script>
   window.pagePath = location.pathname + location.search + location.hash;
@@ -54,14 +60,6 @@ const pageview = `
     }
   }
   window.addEventListener('popstate', pageview);
-</script>
-<script defer>
-document.addEventListener('DOMContentLoaded', () => {
-  alert("Hello! I am an alert box!!");
-  console.log("here is the contents");
-  console.log(document.getElementsByTagName("h1")[0].innerHTML);
-  document.getElementsByTagName("h1")[0].innerHTML = "Hello World!";
-});
 </script>`;
 
 const app = express();
