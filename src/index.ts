@@ -11,7 +11,7 @@ const {
 const { origin: pageDomain, pathname: pagePath } = new URL(PAGE_URL);
 const pageId = path.basename(pagePath).match(/[^-]*$/);
 
-// fake trigger 02
+// fake trigger 03
 // Map start page path to "/". Replacing URL for example:
 // - https://my.notion.site/0123456789abcdef0123456789abcdef -> https://mydomain.com/
 // - /My-Page-0123456789abcdef0123456789abcdef -> /
