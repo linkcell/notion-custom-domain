@@ -49,6 +49,7 @@ const pageview = `
     visibility: visible !important;
     display: flex !important;
     line-height: 1.4285em;
+    font-size: 1.12em;
     flex-shrink: 0 !important;
     background: -webkit-linear-gradient(30deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 		-webkit-background-clip: text;
@@ -59,6 +60,10 @@ const pageview = `
   h1:after{
     content: 'quantumland.art';
     visibility: visible !important;
+    display: flex !important;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    color: rgb(88, 88, 88);
   }
 </style>
 <script>
