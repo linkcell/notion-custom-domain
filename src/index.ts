@@ -38,12 +38,14 @@ const pageview = `
 <style> 
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
-  } 
+  }
+  .notion-selectable.notion-page-block {
+    justify-content: center;
+  }
   h1 {
     visibility: hidden;
     line-height: 0;
     width: initial !important;
-    justify-content: center;
   }
   h1:before{
     content: 'Community.';
