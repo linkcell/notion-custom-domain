@@ -41,10 +41,18 @@ const pageview = `
   } 
   h1 {
     visibility: hidden;
+    line-height: 0;
   }
   h1:after{
     content: 'Submit new paper';
     visibility: visible !important;
+    display: flex !important;
+    flex-shrink: 0 !important;
+    background: -webkit-linear-gradient(30deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	  color: transparent;
   }
 </style>
 <script>
