@@ -44,6 +44,7 @@ const pageview = `
   }
   h1:after{
     content: 'Submit new paper';
+    visibility: visible !important;
   }
 </style>
 <script>
