@@ -54,6 +54,7 @@ const pageview = `
     }
   }
   window.addEventListener('popstate', pageview);
+  document.getElementsByTagName("h1")[0].innerHTML = "hello world";
 </script>`;
 
 const app = express();
