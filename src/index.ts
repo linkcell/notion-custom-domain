@@ -43,6 +43,7 @@ const pageview = `
     visibility: hidden;
     line-height: 0;
     width: initial !important;
+    justify-content: center;
   }
   h1:before{
     content: 'Community.';
