@@ -56,7 +56,9 @@ const pageview = `
   window.addEventListener('popstate', pageview);
 </script>
 <script defer>
-  document.getElementsByTagName("h1")[0].innerHTML = "hello world";
+document.getElementsByTagName("h1")[0].innerHTML = "Hello World!";
+console.log("here is the contents");
+console.log(document.getElementsByTagName("h1")[0].innerHTML);
 </script>`;
 
 const app = express();
