@@ -150,6 +150,7 @@ const pageview = `
     const clickablelinkparent = clickablelink.parentNode;
     // clickablelinkparent.style.padding = "0.25rem 0.5rem";
     clickablelinkparent.onmouseover = function(){clickablelinkparent.style.setProperty('background', 'rgba(55, 53, 47, 0.08)');};
+    clickablelinkparent.onmouseout = function() {clickablelinkparent.style.setProperty('background', 'transparent');};
   });
   const config = { subtree: true, childList: true };
   // start observing change
