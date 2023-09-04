@@ -144,6 +144,9 @@ const pageview = `
         r.style.setProperty('--biglogo', 'none');
         r.style.setProperty('--mainmargin', '80px');
       }
+      if (previousUrl.substr(0,28) == "https://ochland.notion.site/"){
+        window.location.href = "https://notion-custom-domain-ten.vercel.app/"+previousUrl.substr(28);
+      }
     }
     // my contant mutations here
     const clickablelink = document.querySelector('.notion-link-token.notion-focusable-token.notion-enable-hover');
