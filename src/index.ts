@@ -169,12 +169,12 @@ const pageview = `
         //   e.preventDefault();
         //   window.location = newlink;
         // };
-        alllinks[i].style.setProperty('pointer-events', 'none');
-        alllinks[i].style.setProperty('cursor', 'pointer', 'important');
-        alllinks[i].addEventListener("click", function(event){
-          event.preventDefault();
-          window.location.href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
-        });
+        // alllinks[i].style.setProperty('pointer-events', 'none');
+        // alllinks[i].style.setProperty('cursor', 'pointer', 'important');
+        // alllinks[i].addEventListener("click", function(event){
+        //   event.preventDefault();
+        //   window.location.href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
+        // });
         // alllinks[i].setAttribute("href", newlink);
         // alllinks[i].href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
       }
