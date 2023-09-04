@@ -96,14 +96,19 @@ const pageview = `
   const observer = new MutationObserver(() => {
     if (window.location.href !== previousUrl) {
       previousUrl = window.location.href;
+      var r = document.querySelector(':root');
       if(window.location.href != "https://notion-custom-domain-ten.vercel.app/"){
-        alert("not main page");
-        var r = document.querySelector(':root');
         r.style.setProperty('--jutifycont', 'initial'); 
         r.style.setProperty('--oldtitlevis', 'visible'); 
         r.style.setProperty('--oldtitleline', '1.2em'); 
         r.style.setProperty('--beforecont', '""');
         r.style.setProperty('--aftercont', '""'); 
+      } else {
+        r.style.setProperty('--jutifycont', 'center'); 
+        r.style.setProperty('--oldtitlevis', 'hidden'); 
+        r.style.setProperty('--oldtitleline', '0'); 
+        r.style.setProperty('--beforecont', 'Community.');
+        r.style.setProperty('--aftercont', 'quantumland.art'); 
       }
     }
   });
