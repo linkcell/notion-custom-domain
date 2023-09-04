@@ -54,6 +54,9 @@ const pageview = `
   .notranslate.shadow-cursor-breadcrumb > div:nth-child(1) > a > div > div:nth-child(2) {
     display: none !important;
   }
+  .katex > .katex-display {
+    padding-right: 0 !important;
+  }
   .pseudoSelection > .notion-record-icon.notranslate {
     display: var(--biglogo) !important;
   }
