@@ -96,7 +96,7 @@ const pageview = `
 
   }
   .notion-selectable.notion-equation-block > div > div:hover {
-    background: initial;
+    background: transparent !important;
   }
 </style>
 <script>
