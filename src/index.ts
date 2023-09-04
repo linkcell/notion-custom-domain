@@ -42,9 +42,20 @@ const pageview = `
     --oldtitleline: 0;
     --beforecont: 'Community.'; 
     --aftercont: 'quantumland.art'
+    --biglogo: none;
+    --mainmargin: 80px;
   }
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
+  }
+  .notranslate.shadow-cursor-breadcrumb > div > div:nth-last-child(1) {
+    display: none;
+  }
+  .pseudoSelection > .notion-record-icon.notranslate {
+    display: var(--biglogo);
+  }
+  .notion-page-controls {
+    margin-top: var(--mainmargin);
   }
   .notion-selectable.notion-page-block {
     justify-content: var(--jutifycont);
@@ -102,13 +113,17 @@ const pageview = `
         r.style.setProperty('--oldtitlevis', 'visible'); 
         r.style.setProperty('--oldtitleline', '1.2em'); 
         r.style.setProperty('--beforecont', '""');
-        r.style.setProperty('--aftercont', '""'); 
+        r.style.setProperty('--aftercont', '""');
+        r.style.setProperty('--biglogo', 'block');
+        r.style.setProperty('--mainmargin', '8px');
       } else {
         r.style.setProperty('--jutifycont', 'center'); 
         r.style.setProperty('--oldtitlevis', 'hidden'); 
         r.style.setProperty('--oldtitleline', '0'); 
         r.style.setProperty('--beforecont', '"Community."');
         r.style.setProperty('--aftercont', '"quantumland.art"'); 
+        r.style.setProperty('--biglogo', 'none');
+        r.style.setProperty('--mainmargin', '80px');
       }
     }
   });
