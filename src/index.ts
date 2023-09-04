@@ -156,10 +156,14 @@ const pageview = `
     for (let i = 0; i < alllinks.length; i++) {
       if(alllinks[i].href.substr(0,28) == "https://ochland.notion.site/"){
         var newlink = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
-        alllinks[i].onclick = function(e) {
-          e.preventDefault();
+        // alllinks[i].onclick = function(e) {
+        //   e.preventDefault();
+        //   window.location = newlink;
+        // };
+        alllinks[i].addEventListener("click", function(event){
+          event.preventDefault();
           window.location = newlink;
-        };
+        });
         // alllinks[i].setAttribute("href", newlink);
         // alllinks[i].href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
       }
