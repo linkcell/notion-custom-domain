@@ -95,24 +95,21 @@ const pageview = `
   let previousUrl = "";
   const observer = new MutationObserver(() => {
     if (window.location.href !== previousUrl) {
-      console.log("URL changed");
       previousUrl = window.location.href;
-      alert("something changed");
+      if(window.location.href != "https://notion-custom-domain-ten.vercel.app/"){
+        alert("not main page");
+        var r = document.querySelector(':root');
+        r.style.setProperty('--jutifycont', 'initial'); 
+        r.style.setProperty('--oldtitlevis', 'visible'); 
+        r.style.setProperty('--oldtitleline', '1.2em'); 
+        r.style.setProperty('--beforecont', '""');
+        r.style.setProperty('--aftercont', '""'); 
+      }
     }
   });
   const config = { subtree: true, childList: true };
   // start observing change
   observer.observe(document, config);
-
-  if(window.location.href != "https://notion-custom-domain-ten.vercel.app/"){
-    alert("not main page");
-    var r = document.querySelector(':root');
-    r.style.setProperty('--jutifycont', 'initial'); 
-    r.style.setProperty('--oldtitlevis', 'visible'); 
-    r.style.setProperty('--oldtitleline', '1.2em'); 
-    r.style.setProperty('--beforecont', '""');
-    r.style.setProperty('--aftercont', '""'); 
-  }
 </script>`;
 
 const app = express();
