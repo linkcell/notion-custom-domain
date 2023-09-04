@@ -83,6 +83,11 @@ const pageview = `
     }
   }
   window.addEventListener('popstate', pageview);
+</script>
+<script>
+  if(window.location.href != "https://notion-custom-domain-ten.vercel.app/"){
+    alert("not main page");
+  }
 </script>`;
 
 const app = express();
