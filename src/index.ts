@@ -48,7 +48,7 @@ const pageview = `
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
   }
-  .notranslate.shadow-cursor-breadcrumb > div > div:nth-last-child(1) {
+  .notranslate.shadow-cursor-breadcrumb > div > div:nth-child(2) {
     display: none;
   }
   .pseudoSelection > .notion-record-icon.notranslate {
@@ -122,8 +122,8 @@ const pageview = `
         r.style.setProperty('--oldtitleline', '0'); 
         r.style.setProperty('--beforecont', '"Community."');
         r.style.setProperty('--aftercont', '"quantumland.art"'); 
-        r.style.setProperty('--biglogo', 'none');
-        r.style.setProperty('--mainmargin', '80px');
+        r.style.setProperty('--biglogo', 'none !important');
+        r.style.setProperty('--mainmargin', '80px !important');
       }
     }
   });
