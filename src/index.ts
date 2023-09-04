@@ -52,7 +52,7 @@ const pageview = `
     display: none;
   }
   .pseudoSelection > .notion-record-icon.notranslate {
-    display: none;
+    display: none !important;
   }
   .notion-page-controls {
     margin-top: var(--mainmargin);
