@@ -151,6 +151,13 @@ const pageview = `
     // clickablelinkparent.style.padding = "0.25rem 0.5rem";
     // clickablelinkparent.onmouseover = function(){clickablelinkparent.style.setProperty('background', 'rgba(55, 53, 47, 0.08)');};
     // clickablelinkparent.onmouseout = function() {clickablelinkparent.style.setProperty('background', 'transparent');};
+    // get all links
+    const alllinks = document.querySelectorAll(".notion-page-mention-token.notion-text-mention-token.notion-focusable-token.notion-enable-hover");
+    for (let i = 0; i < alllinks.length; i++) {
+      if(alllinks[i].href.substr(0,28) == "https://ochland.notion.site/"){
+        alllinks[i].href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
+      }
+    }
   });
   const config = { subtree: true, childList: true };
   // start observing change
