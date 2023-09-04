@@ -42,7 +42,7 @@ const pageview = `
     --oldtitleline: 0;
     --beforecont: 'Community.'; 
     --aftercont: 'quantumland.art'
-    --biglogo: none !important;
+    --biglogo: none;
     --mainmargin: 80px !important;
   }
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
@@ -52,7 +52,7 @@ const pageview = `
     display: none !important;
   }
   .pseudoSelection > .notion-record-icon.notranslate {
-    display: var(--biglogo);
+    display: var(--biglogo) !important;
   }
   .notion-page-controls {
     margin-top: var(--mainmargin);
@@ -114,7 +114,7 @@ const pageview = `
         r.style.setProperty('--oldtitleline', '1.2em'); 
         r.style.setProperty('--beforecont', '""');
         r.style.setProperty('--aftercont', '""');
-        r.style.setProperty('--biglogo', 'block !important');
+        r.style.setProperty('--biglogo', 'block');
         r.style.setProperty('--mainmargin', '8px !important');
       } else {
         r.style.setProperty('--jutifycont', 'center'); 
@@ -122,7 +122,7 @@ const pageview = `
         r.style.setProperty('--oldtitleline', '0'); 
         r.style.setProperty('--beforecont', '"Community."');
         r.style.setProperty('--aftercont', '"quantumland.art"'); 
-        r.style.setProperty('--biglogo', 'none !important');
+        r.style.setProperty('--biglogo', 'none');
         r.style.setProperty('--mainmargin', '80px !important');
       }
     }
