@@ -92,6 +92,12 @@ const pageview = `
     line-height: 0.8em;
     color: rgb(88, 88, 88);
   }
+  a[href^="https://ochland.notion.site"] {
+
+  }
+  .notion-selectable.notion-equation-block > div > div:hover {
+    background: initial;
+  }
 </style>
 <script>
   window.pagePath = location.pathname + location.search + location.hash;
