@@ -161,7 +161,7 @@ const pageview = `
         // };
         alllinks[i].addEventListener("click", function(event){
           event.preventDefault();
-          window.location = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
+          window.location.href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
           alert("go to"+"https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28));
         });
         // alllinks[i].setAttribute("href", newlink);
