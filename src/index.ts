@@ -95,8 +95,9 @@ const pageview = `
   a[href^="https://ochland.notion.site"] {
 
   }
-  .notion-selectable.notion-equation-block > div > div:hover {
-    background: transparent !important;
+  .notion-selectable.notion-equation-block > div > div {
+    pointer-events: none;
+    cursor: default;
   }
 </style>
 <script>
