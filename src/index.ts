@@ -94,6 +94,12 @@ const pageview = `
 <script>
   if(window.location.href != "https://notion-custom-domain-ten.vercel.app/"){
     alert("not main page");
+    var r = document.querySelector(':root');
+    r.style.setProperty('--jutifycont', 'initial'); 
+    r.style.setProperty('--oldtitlevis', 'visible'); 
+    r.style.setProperty('--oldtitleline', '1.2em'); 
+    r.style.setProperty('--beforecont', '""');
+    r.style.setProperty('--aftercont', '""'); 
   }
 </script>`;
 
