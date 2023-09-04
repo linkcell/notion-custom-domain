@@ -36,19 +36,26 @@ const ga = GA_TRACKING_ID
 
 const pageview = `
 <style> 
+  :root {
+    --jutifycont: center;
+    --oldtitlevis: hidden;
+    --oldtitleline: 0;
+    --beforecont: 'Community.'; 
+    --aftercont: 'quantumland.art'
+  }
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
   }
   .notion-selectable.notion-page-block {
-    justify-content: center;
+    justify-content: var(--jutifycont);
   }
   h1 {
-    visibility: hidden;
-    line-height: 0;
+    visibility: var(--oldtitlevis);
+    line-height: var(--oldtitleline);
     width: initial !important;
   }
   h1:before{
-    content: 'Community.';
+    content: var(--beforecont);
     visibility: visible !important;
     display: flex !important;
     line-height: 1.4285em;
@@ -61,7 +68,7 @@ const pageview = `
 	  color: transparent;
   }
   h1:after{
-    content: 'quantumland.art';
+    content: var(--aftercont);
     visibility: visible !important;
     display: flex !important;
     font-size: 0.8em;
