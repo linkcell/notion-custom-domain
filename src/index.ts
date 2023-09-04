@@ -107,8 +107,8 @@ const pageview = `
         r.style.setProperty('--jutifycont', 'center'); 
         r.style.setProperty('--oldtitlevis', 'hidden'); 
         r.style.setProperty('--oldtitleline', '0'); 
-        r.style.setProperty('--beforecont', 'Community.');
-        r.style.setProperty('--aftercont', 'quantumland.art'); 
+        r.style.setProperty('--beforecont', '"Community."');
+        r.style.setProperty('--aftercont', '"quantumland.art"'); 
       }
     }
   });
