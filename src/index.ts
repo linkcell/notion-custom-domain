@@ -92,9 +92,9 @@ const pageview = `
   window.addEventListener('popstate', pageview);
 </script>
 <script>
-  window.onbeforeunload = function(e) {
-    alert("something changed");
-  };
+  window.addEventListener('hashchange', function() {
+    alert("Hash Changed");
+  });
   if(window.location.href != "https://notion-custom-domain-ten.vercel.app/"){
     alert("not main page");
     var r = document.querySelector(':root');
