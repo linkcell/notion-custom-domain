@@ -159,7 +159,7 @@ const pageview = `
         //   e.preventDefault();
         //   window.location = newlink;
         // };
-        alllinks[i].addEventListener("click", function(event){
+        alllinks[i].parentNode.addEventListener("click", function(event){
           event.preventDefault();
           window.location.href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
         });
