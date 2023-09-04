@@ -163,6 +163,7 @@ const pageview = `
         //   window.location = newlink;
         // };
         alllinks[i].style.setProperty('pointer-events', 'none');
+        alllinks[i].style.setProperty('cursor', 'pointer');
         alllinks[i].parentNode.addEventListener("click", function(event){
           event.preventDefault();
           window.location.href = "https://notion-custom-domain-ten.vercel.app/"+alllinks[i].href.substr(28);
