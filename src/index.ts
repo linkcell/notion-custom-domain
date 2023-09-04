@@ -42,17 +42,17 @@ const pageview = `
     --oldtitleline: 0;
     --beforecont: 'Community.'; 
     --aftercont: 'quantumland.art'
-    --biglogo: none;
-    --mainmargin: 80px;
+    --biglogo: none !important;
+    --mainmargin: 80px !important;
   }
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
   }
   .notranslate.shadow-cursor-breadcrumb > div > div:nth-child(2) {
-    display: none;
+    display: none !important;
   }
   .pseudoSelection > .notion-record-icon.notranslate {
-    display: none !important;
+    display: var(--biglogo);
   }
   .notion-page-controls {
     margin-top: var(--mainmargin);
@@ -114,8 +114,8 @@ const pageview = `
         r.style.setProperty('--oldtitleline', '1.2em'); 
         r.style.setProperty('--beforecont', '""');
         r.style.setProperty('--aftercont', '""');
-        r.style.setProperty('--biglogo', 'block');
-        r.style.setProperty('--mainmargin', '8px');
+        r.style.setProperty('--biglogo', 'block !important');
+        r.style.setProperty('--mainmargin', '8px !important');
       } else {
         r.style.setProperty('--jutifycont', 'center'); 
         r.style.setProperty('--oldtitlevis', 'hidden'); 
