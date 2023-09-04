@@ -162,6 +162,7 @@ const pageview = `
         // };
         alllinks[i].addEventListener("click", function(event){
           event.preventDefault();
+          alert("you clicked me!");
           window.location = newlink;
         });
         // alllinks[i].setAttribute("href", newlink);
