@@ -48,7 +48,10 @@ const pageview = `
   .notion-topbar > div > div:nth-last-child(1), .notion-topbar > div > div:nth-last-child(2), .notion-topbar > div > div:nth-last-child(3) { 
     display:none !important; 
   }
-  .notranslate.shadow-cursor-breadcrumb > div > div:nth-child(2) {
+  .notranslate.shadow-cursor-breadcrumb > div:nth-child(1) > div:nth-child(2) {
+    display: none !important;
+  }
+  .notranslate.shadow-cursor-breadcrumb > div:nth-child(1) > a > div > div:nth-child(2) {
     display: none !important;
   }
   .pseudoSelection > .notion-record-icon.notranslate {
