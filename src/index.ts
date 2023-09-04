@@ -105,13 +105,13 @@ const pageview = `
   .notion-link-token.notion-focusable-token.notion-enable-hover > span {
     opacity: 1 !important;
   }
-  .notion-page-mention-token.notion-text-mention-token.notion-focusable-token.notion-enable-hover:after {
-    content: '';
-    position: absolute;
-    width: 100%; height: 100%;
-    top: 0; left: 0;
-    cursor: pointer;
-  }
+  // .notion-page-mention-token.notion-text-mention-token.notion-focusable-token.notion-enable-hover:after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%; height: 100%;
+  //   top: 0; left: 0;
+  //   cursor: pointer;
+  // }
 </style>
 <script>
   window.pagePath = location.pathname + location.search + location.hash;
