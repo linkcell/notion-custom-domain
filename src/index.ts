@@ -99,9 +99,9 @@ const pageview = `
     pointer-events: none;
     cursor: default;
   }
-  // .notion-link-token.notion-focusable-token.notion-enable-hover:hover {
-  //   background: rgba(55, 53, 47, 0.08);
-  // }
+  .notion-link-token.notion-focusable-token.notion-enable-hover:hover {
+    background: rgba(55, 53, 47, 0.08);
+  }
   .notion-link-token.notion-focusable-token.notion-enable-hover > span {
     opacity: 1 !important;
   }
@@ -149,8 +149,8 @@ const pageview = `
     const clickablelink = document.querySelector('.notion-link-token.notion-focusable-token.notion-enable-hover');
     const clickablelinkparent = clickablelink.parentNode;
     // clickablelinkparent.style.padding = "0.25rem 0.5rem";
-    clickablelinkparent.onmouseover = function(){clickablelinkparent.style.setProperty('background', 'rgba(55, 53, 47, 0.08)');};
-    clickablelinkparent.onmouseout = function() {clickablelinkparent.style.setProperty('background', 'transparent');};
+    // clickablelinkparent.onmouseover = function(){clickablelinkparent.style.setProperty('background', 'rgba(55, 53, 47, 0.08)');};
+    // clickablelinkparent.onmouseout = function() {clickablelinkparent.style.setProperty('background', 'transparent');};
   });
   const config = { subtree: true, childList: true };
   // start observing change
