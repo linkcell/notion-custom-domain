@@ -103,7 +103,7 @@ const pageview = `
     background: rgba(55, 53, 47, 0.08);
   }
   .notion-link-token.notion-focusable-token.notion-enable-hover > span {
-    opacity: 1;
+    opacity: 1 !important;
   }
 </style>
 <script>
