@@ -236,6 +236,7 @@ app.use(
     },
     userResDecorator: (_proxyRes, proxyResData, userReq) => {
       if (/^\/app-.*\.js$/.test(userReq.url)) {
+        console.log("this is a print of proxyResData:");
         console.log(proxyResData);
         return proxyResData
           .toString()
